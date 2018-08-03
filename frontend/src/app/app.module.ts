@@ -5,15 +5,22 @@ import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { routes } from './app.routing';
 import { ApexComponent } from '../apex/apex.component';
+import {DropdownModule} from 'primeng/primeng';
+import { FormsModule } from '@angular/forms'; 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
-    ApexComponent
+    ApexComponent 
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    DropdownModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
